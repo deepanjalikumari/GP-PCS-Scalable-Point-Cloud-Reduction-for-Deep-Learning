@@ -102,7 +102,6 @@ requirements.txt — Python dependencies file.
 
 README.md — This file.
 
-###Citation
-If you use this code or method in your research, please cite the original paper:
+### Citation
 
 GP-PCS: One-shot Feature-Preserving Point Cloud Simplification with Gaussian Processes on Riemannian Manifolds.
