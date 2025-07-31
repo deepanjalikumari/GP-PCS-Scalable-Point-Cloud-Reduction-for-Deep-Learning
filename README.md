@@ -100,8 +100,6 @@ modelnet40-gppcs.ipynb — Main Jupyter notebook for data preprocessing, simplif
 
 requirements.txt — Python dependencies file.
 
-README.md — This file.
-
 ### Citation
 
 GP-PCS: One-shot Feature-Preserving Point Cloud Simplification with Gaussian Processes on Riemannian Manifolds.
