@@ -1,5 +1,5 @@
-##GP-PCS: Feature-Preserving Point Cloud Simplification with Gaussian Processes
-###Project Overview
+## GP-PCS: Feature-Preserving Point Cloud Simplification with Gaussian Processes
+### Project Overview
 This project implements GP-PCS (Gaussian Process Point Cloud Simplification) — a state-of-the-art method to drastically reduce the number of points in 3D point clouds while preserving essential geometric features. It leverages Gaussian Processes defined on Riemannian manifolds to adaptively sample points, especially around edges and areas of high curvature, making it highly suitable for downstream 3D shape classification tasks.
 
 The simplified point clouds are used for training and evaluating the deep learning model PointNet on the ModelNet40 dataset, demonstrating efficient 3D shape classification with minimal loss in accuracy.
@@ -13,7 +13,7 @@ Efficient and Scalable: Designed to handle large datasets with practical runtime
 
 Empirical Validation: Achieves >90% classification accuracy on ModelNet40 after simplification, with less than 2% drop compared to full-size clouds.
 
-###Installation
+### Installation
 Ensure you have Python 3.7+ installed. Clone the repo and install dependencies:
 
 bash
@@ -34,7 +34,7 @@ scikit-learn
 
 h5py
 
-###Usage
+### Usage
 Prepare the dataset
 
 Download and place the ModelNet40 dataset (HDF5 format with 2048 points per cloud) in the path:
@@ -66,7 +66,7 @@ k_add: Points added per iteration during greedy selection (e.g., 256)
 
 GP kernel parameters (sigma_y, kappa, nu) for customized simplification behavior
 
-###Results
+### Results
 Simplification: Point clouds reduced from 2048 to 1536 points, preserving important features.
 
 Classification Accuracy:
@@ -77,7 +77,7 @@ After simplification: ~90.1% (PointNet on GP-PCS simplified clouds)
 
 Runtime: Simplification typically completes in under one minute per large point cloud.
 
-###Pros
+### Pros
 High-quality feature preservation in simplification
 
 Minimal impact on classification accuracy
@@ -86,7 +86,7 @@ Efficient simplification and scalable pipeline
 
 Easily integrates with existing 3D classification models
 
-###Cons
+### Cons
 Hyperparameter tuning may be needed per dataset
 
 Computational overhead due to GP fitting and matrix operations
@@ -95,7 +95,7 @@ Very aggressive simplification can impact fine-grained tasks
 
 Requires several external Python libraries and dependencies
 
-###File Structure
+### File Structure
 modelnet40-gppcs.ipynb — Main Jupyter notebook for data preprocessing, simplification, training, and evaluation.
 
 requirements.txt — Python dependencies file.
